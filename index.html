@@ -1,0 +1,398 @@
+<!doctype html>
+<html lang="ar" dir="rtl">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Secretary App | تطبيق سكرتيري</title>
+    <meta name="description" content='تطبيق سكرتيري | Secretary App هو منصة مبتكرة تهدف إلى تحسين جودة الحياة وتسهيل حياة المستخدمين عبر توفير خدمات متنوعة ومتخصصة. يُقدم التطبيق خمسة أنواع من الخدمات ، مُتيحًا للمستخدمين الوصول إلى خدمات الطلبات من المطاعم، وخدمات الحجوزات من الطيران والفنادق ، والخدمات العقارية ، وسائقي السيارات الفارهة، بالإضافة إلى خدمة التوصيل السريع. يتميز التطبيق بسكرتير متخصص في الذكاء الاصطناعي، يقدم أحدث التقنيات والأدوات لتحسين تجربة المستخدم وتلبية احتياجاته بكفاءة. بفضل هذا التنوع والابتكار، يعتبر تطبيق "سكرتيري" اول تطبيق يجمع الخدمات المذكورة في تطبيق واحد وبكفاءة عالية ورفيقًا فعّالًا في تلبية احتياجات وتطلعات المستخدمين بشكل احترافي وفعّال.'>
+    <meta name="keywords" content="السكرتيرة التنفيذية ,مهام السكرتارية , Secretary App, تطبيق سكرتيري ,مهام السكرتارية التنفيذية ,مهام السكرتارية الإدارية ,مهام السكرتارية الطبية ,ما هي مهام السكرتيرة ,مهام وواجبات السكرتيرة التنفيذية ,مهام ووظائف السكرتارية ,مهام واعمال السكرتارية ,مهام وظيفة السكرتيرة ,ما هو عمل السكرتيرة ,مواصفات السكرتيرة الناجحة ,صفات السكرتيرة الناجحة ,السكرتيرة التنفيذية الناجحة ,شروط السكرتيرة الناجحة ,مهام السكرتارية الخاصة ,مهام وحدة السكرتارية ,مهام وواجبات السكرتارية التنفيذية ,مهام وظيفه السكرتارية , السكرتير ,السكرتارية ,مهام السكرتير ,أهمية السكرتارية ,يوسف بدير ,دورة السكرتارية ,ما هي لسكرتارية ,ننوشن ,تطبيق ,تخطيط ,تنظيم ,عبدالله العلاوي ,تطوير ,تطوير شخصي ,سكرتير شخصي ,تنظيم حياة ,دروس اون لاين ,احمد ابو زيد ,ابو زيد نوشن ,تجميع دروس ,كل ماتحتاجه في مكان واحد ,عقل ثاني ,احمد صبري ,دانة علان ,تنظين وتحطيط ,جدول حياتك ,سكرتير شخصي مجانا ,شرح نوشن ,موقع نوشن ,notion ,طالب ,جامعة حياة جامعية ,سنة تحضيري ,سنة تحضيرية ,تحضيري ,اولى جامعة ,ثانية جامعة ,المرحلة الجامعي ,المدرسة ,جدول الاسبوع ,انتاجية ,تركيز ,تنظيم ملفات ,تنظيم جدول ,تنظيم مواعيد ,موقع مهم ,موقع رهيب ,عقل ,">
+    <!-- tailwind css cdn -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <!-- tailwind css custom -->
+    <script>
+      tailwind.config = {
+        theme: {
+          extend: {
+            colors: {
+              primary: '#BCF125',
+              secondary: '#2F3440',
+              main_bg: '#212121',
+            }
+          }
+        }
+      }
+    </script>
+    <!-- icon -->
+    <link rel="icon" type="image/svg+xml" href="./src/assets/logo.svg" />
+    <!-- main style file -->
+    <link rel="stylesheet" href="./src/css/style.css" />
+    <!-- swiper style file -->
+    <link rel="stylesheet" href="./src/css/swiper.css" />
+    <!-- fontAwesome style file -->
+    <link rel="stylesheet" href="./src/css/all.min.css" />
+    <!-- Start google font -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Sans+Arabic:wght@100;200;300;400;500;600;700&display=swap" rel="stylesheet">
+    <!-- End google font -->
+    <!-- Swiper -->
+    <link rel="stylesheet" href="https://unpkg.com/swiper@8/swiper-bundle.min.css"/>
+    <!-- animate.css -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
+  </head>
+  <body class="bg-main_bg">
+
+    <!-- Start Header Section -->
+    <header class="min-h-screen py-14 relative overflow-hidden">
+      <img src="./src/assets/group.svg" alt="group-img" class="group-img animate__animated animate__bounceInDown duration-[5s] absolute right-0 top-0 z-20">
+      <div class="container">
+
+        <div class="logo animate__animated animate__bounceInDown h-52 w-52 mx-auto rounded-3xl overflow-hidden z-10">
+          <img src="./src/assets/logo.svg" alt="logo | لوجو" class="h-full w-full object-cover">
+        </div>
+
+        <div class="text-info py-7 text-center text-white">
+          <h1 class="title text-4xl mb-3 font-bold text-primary">
+            سكــرتيــري 
+            <span class="block mt-4">يرتب لك كل الأمور !</span>
+          </h1>
+          <p class="paragraph animate__animated animate__bounceInDown text-lg font-semibold leading-7 max-w-[700px] mx-auto">سكرتيري تطبيق يخدمك في كل شيء تحتاجه، عامله كأنه فعلاً سكرتيرك الخاص. بالصوت او بالكتابة، اطلب منه انه يبحث لك عن ارخص
+          اسعار المكيفات او اطلب منه انه ينسق لك ويشوف لك اسعار المشاهير اللي تبي تسوي معهم اعلانات، او اطلب منه انه يطلب لك من
+          مطعمك المفضل…</p>
+        </div>
+
+        <div class="download-app">
+          <h2 class="text-center text-3xl md:text-3xl font-extrabold text-primary opacity-80">حمل التطبيق الآن</h2>
+          <div class="links h-fit mt-5 flex gap-3 flex-wrap justify-center items-center">
+            <div class="app h-fit animate__animated animate__bounceInRight">
+                <a href="https://play.google.com/store/search?q=%D8%B3%D9%83%D8%B1%D8%AA%D9%8A%D8%B1%D9%8A&c=apps&hl=ar&gl=ES" target="_blank" aria-label="Read more about Seminole tax hike"
+                    class="block w-[125px] h-10 rounded-md pt-2 border duration-300 hover:-translate-y-1 pl-1 pr-1 bg-white">
+                    <img loading="lazy" src="./src/assets/google-play-1.svg" alt="android" class="max-w-full -mt-1">
+                </a>
+            </div>
+            <div class="app h-fit animate__animated animate__bounceInLeft">
+                <a href="https://apps.apple.com/sa/app/%D8%B3%D9%83%D8%B1%D8%AA%D9%8A%D8%B1%D9%8A-%D9%8A%D8%B1%D8%AA%D8%A8-%D9%84%D9%83-%D9%83%D9%84-%D8%A7%D9%84%D8%A3%D9%85%D9%88%D8%B1/id1631949126?l=ar&platform=iphone" target="_blank" aria-label="Read more about Seminole tax hike" class="block w-[130px] h-9 duration-300 hover:-translate-y-1">
+                    <img loading="lazy" src="./src/assets/app-store.svg" alt="apple" class="max-w-full">
+                </a>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </header>
+    <!-- End Header Section -->
+    
+    <!-- Start Main page -->
+    <main>
+      
+      <!-- Start about-us -->
+      <section id="about_us" class="py-14 relative overflow-hidden bg-[#BCF12550]">
+        <img src="./src/assets/group.svg" alt="group-img" class="group-img animate__animated animate__bounceInDown duration-[5s] absolute right-0 top-0 z-20">
+        <div class="container">
+
+          <div class="main-title text-center mb-10 w-fit mx-auto text-white">
+            <h3 class="text-3xl font-extrabold" style="text-shadow: -2px 6px 6px rgba(188, 241, 37, 0.3);">
+              عــن تطبيــق سـكــرتيــري
+            </h3>
+          </div>
+
+          <div class="info-app">
+            <p class="text-white text-center text-lg font-semibold leading-8 max-w-[990px] mx-auto">
+              تطبيق "سكرتيري" هو منصة مبتكرة تهدف إلى تحسين جودة الحياة وتسهيل حياة المستخدمين عبر توفير خدمات متنوعة ومتخصصة. يُقدم
+              التطبيق خمسة أنواع من الخدمات ، مُتيحًا للمستخدمين الوصول إلى خدمات الطلبات من المطاعم، وخدمات الحجوزات من الطيران
+              والفنادق ، والخدمات العقارية ، وسائقي السيارات الفارهة، بالإضافة إلى خدمة التوصيل السريع. يتميز التطبيق بسكرتير متخصص في
+              الذكاء الاصطناعي، يقدم أحدث التقنيات والأدوات لتحسين تجربة المستخدم وتلبية احتياجاته بكفاءة. بفضل هذا التنوع والابتكار،
+              يعتبر تطبيق "سكرتيري" اول تطبيق يجمع الخدمات المذكورة في تطبيق واحد وبكفاءة عالية ورفيقًا فعّالًا في تلبية احتياجات
+              وتطلعات المستخدمين بشكل احترافي وفعّال.
+            </p>
+          </div>
+
+        </div>
+      </section>
+      <!-- End about-us -->
+
+      <!-- Start services -->
+      <section id="services" class="py-14 relative overflow-hidden">
+        <img src="./src/assets/group.svg" alt="group-img" class="group-img animate__animated animate__bounceInDown duration-[5s] absolute right-0 top-0 z-20">
+        <div class="container">
+
+          <div class="main-title text-center mb-10 w-fit mx-auto text-white">
+            <h3 class="text-3xl font-extrabold" style="text-shadow: -2px 6px 6px rgba(188, 241, 37, 0.3);">
+              خـدمـات تطبيــق سـكــرتيــري
+            </h3>
+          </div>
+
+            <div class="row mt-16 grid md:grid-cols-2 2xl:grid-cols-3 gap-6">
+
+                <div class="col flex flex-col gap-4 text-center p-6 rounded-2xl bg-secondary text-gray-200 duration-300 hover:-translate-y-3">
+                  <div class="icon flex justify-center">
+                    <img loading="lazy" src="./src/assets/delivery.png" alt="servise-img-1" class="w-16 h-16">
+                  </div>
+                  <div class="servise-title text-xl font-bold">
+                    <h4>الطلب من المطاعم</h4>
+                  </div>
+                </div>
+
+                <div class="col flex flex-col gap-4 text-center p-6 rounded-2xl bg-secondary text-gray-200 duration-300 hover:-translate-y-3">
+                  <div class="icon flex justify-center">
+                    <img loading="lazy" src="./src/assets/airport.png" alt="servise-img-1" class="w-16 h-16">
+                  </div>
+                  <div class="servise-title text-xl font-bold">
+                    <h4>حجز الطيران والفنادق</h4>
+                  </div>
+                </div>
+
+                <div class="col flex flex-col gap-4 text-center p-6 rounded-2xl bg-gradient-to-r from-[#BCF125] to-[#2A9D8F] text-secondary duration-300 hover:-translate-y-3">
+                  <div class="icon flex justify-center">
+                    <img loading="lazy" src="./src/assets/ai.png" alt="servise-img-1" class="w-16 h-16">
+                  </div>
+                  <div class="servise-title text-xl font-bold">
+                    <h4>خدمات الذكاء الاصطناعي</h4>
+                  </div>
+                </div>
+
+                <div class="col flex flex-col gap-4 text-center p-6 rounded-2xl bg-secondary text-gray-200 duration-300 hover:-translate-y-3">
+                  <div class="icon flex justify-center">
+                    <img loading="lazy" src="./src/assets/house.png" alt="servise-img-1" class="w-16 h-16">
+                  </div>
+                  <div class="servise-title text-xl font-bold">
+                    <h4>الخدمات العقارية</h4>
+                  </div>
+                </div>
+
+                <div class="col flex flex-col gap-4 text-center p-6 rounded-2xl bg-secondary text-gray-200 duration-300 hover:-translate-y-3">
+                  <div class="icon flex justify-center">
+                    <img loading="lazy" src="./src/assets/car.png" alt="servise-img-1" class="w-16 h-16">
+                  </div>
+                  <div class="servise-title text-xl font-bold">
+                    <h4>طلب سائق بسيارة فاخرة</h4>
+                  </div>
+                </div>
+
+                <div class="col flex flex-col gap-4 text-center p-6 rounded-2xl bg-secondary text-gray-200 duration-300 hover:-translate-y-3">
+                  <div class="icon flex justify-center">
+                    <img loading="lazy" src="./src/assets/fast-delivery.png" alt="servise-img-1" class="w-16 h-16">
+                  </div>
+                  <div class="servise-title text-xl font-bold">
+                    <h4>خدمات التوصيل السريع</h4>
+                  </div>
+                </div>
+
+            </div>
+
+        </div>
+      </section>
+      <!-- End services -->
+
+      <!-- Start links-app -->
+      <section id="link_app" class="py-14 relative overflow-hidden bg-gradient-to-r from-[#BCF125] to-[#2A9D8F]">
+        <div class="container">
+
+          <p class="paragraph text-2xl text-center font-semibold leading-7 max-w-[600px] mx-auto text-secondary">
+            مـاذا تنتظــر !
+            <span class="block mt-1 leading-9">قم بتنزيل التطبيق الآن واجعله سكرتيرك الخاص، واستمتع بجميع الخدمات مجاناً</span>
+          </p>
+          
+          <div class="download-app">
+            <div class="links h-fit mt-5 flex gap-3 flex-wrap justify-center items-center">
+              <div class="app h-fit animate__animated animate__bounceInRight">
+                <a href="https://play.google.com/store/search?q=%D8%B3%D9%83%D8%B1%D8%AA%D9%8A%D8%B1%D9%8A&c=apps&hl=ar&gl=ES" target="_blank" aria-label="Read more about Seminole tax hike"
+                  class="block w-[125px] h-10 rounded-md pt-2 border duration-300 hover:-translate-y-1 pl-1 pr-1 bg-white">
+                  <img loading="lazy" src="./src/assets/google-play-1.svg" alt="android" class="max-w-full -mt-1">
+                </a>
+              </div>
+              <div class="app h-fit animate__animated animate__bounceInLeft">
+                <a href="https://apps.apple.com/sa/app/%D8%B3%D9%83%D8%B1%D8%AA%D9%8A%D8%B1%D9%8A-%D9%8A%D8%B1%D8%AA%D8%A8-%D9%84%D9%83-%D9%83%D9%84-%D8%A7%D9%84%D8%A3%D9%85%D9%88%D8%B1/id1631949126?l=ar&platform=iphone" target="_blank" aria-label="Read more about Seminole tax hike"
+                  class="block w-[130px] h-9 duration-300 hover:-translate-y-1">
+                  <img loading="lazy" src="./src/assets/app-store.svg" alt="apple" class="max-w-full">
+                </a>
+              </div>
+            </div>
+          </div>
+
+        </div>
+      </section>
+      <!-- End links-app -->
+
+      <!-- Start gallery -->
+      <section id="gallery" class="py-14 relative overflow-hidden">
+        <img src="./src/assets/group.svg" alt="group-img" class="group-img animate__animated animate__bounceInDown duration-[5s] absolute right-0 top-0 z-20">
+        <div class="container">
+
+          <div class="main-title text-center mb-10 w-fit mx-auto text-white">
+            <h3 class="text-3xl font-extrabold" style="text-shadow: -2px 6px 6px rgba(188, 241, 37, 0.3);">
+              بعض من صور التطبيــق
+            </h3>
+          </div>
+
+          <div class="swiper-container two">
+            <div class="swiper-wrapper">
+              
+              <div class="swiper-slide">
+                  <div class="slider-image">
+                      <img loading="lazy" src="./src/assets/SC 1.png" alt="slide 1">
+                  </div>
+              </div>
+
+              <div class="swiper-slide">
+                  <div class="slider-image">
+                      <img loading="lazy" src="./src/assets/SC 2.png" alt="slide 1">
+                  </div>
+              </div>
+
+              <div class="swiper-slide">
+                  <div class="slider-image">
+                      <img loading="lazy" src="./src/assets/SC 3.png" alt="slide 1">
+                  </div>
+              </div>
+
+              <div class="swiper-slide">
+                  <div class="slider-image">
+                      <img loading="lazy" src="./src/assets/SC 4.png" alt="slide 1">
+                  </div>
+              </div>
+
+              <div class="swiper-slide">
+                  <div class="slider-image">
+                      <img loading="lazy" src="./src/assets/SC 5.png" alt="slide 1">
+                  </div>
+              </div>
+
+              <div class="swiper-slide">
+                  <div class="slider-image">
+                      <img loading="lazy" src="./src/assets/SC 6.png" alt="slide 1">
+                  </div>
+              </div>
+
+              <div class="swiper-slide">
+                  <div class="slider-image">
+                      <img loading="lazy" src="./src/assets/SC 7.png" alt="slide 1">
+                  </div>
+              </div>
+
+              <div class="swiper-slide">
+                  <div class="slider-image">
+                      <img loading="lazy" src="./src/assets/SC 8.png" alt="slide 1">
+                  </div>
+              </div>
+
+              <div class="swiper-slide">
+                  <div class="slider-image">
+                      <img loading="lazy" src="./src/assets/SC 9.png" alt="slide 1">
+                  </div>
+              </div>
+
+            </div>
+          </div>
+
+        </div>
+      </section>
+      <!-- End gallery -->
+
+      <!-- Start stats -->
+      <section id="stats" class="py-14 relative overflow-hidden bg-[#BCF12550]">
+        <img src="./src/assets/group.svg" alt="group-img" class="group-img animate__animated animate__bounceInDown duration-[5s] absolute right-0 top-0 z-20">
+        <div class="container">
+
+          <div class="main-title text-center mb-10 w-fit mx-auto text-white">
+            <h3 class="text-3xl font-extrabold" style="text-shadow: -2px 6px 6px rgba(188, 241, 37, 0.3);">
+              احصــائيــات التطبيــق
+            </h3>
+          </div>
+
+          <div class="row mt-3 py-7 grid gap-10 grid-cols-1 md:grid-cols-3 justify-between">
+
+            <div class="col relative p-7 opacity-90 hover:opacity-100 duration-300 text-center rounded-lg overflow-hidden bg-secondary text-gray-50">
+              <i class="fa-solid fa-cloud-arrow-down text-5xl"></i>
+              <div class="flex justify-center items-center text-[50px]">
+                +
+                K
+                <span class="num text-5xl font-semibold my-2" data-number="2">0</span>
+              </div>
+              <span class="text text-2xl font-bold text-primary">عمليــة تحميــل</span>
+            </div>
+
+
+            <div class="col relative p-7 opacity-80 hover:opacity-100 duration-300 text-center rounded-lg overflow-hidden bg-secondary text-gray-50">
+              <i class="fa-solid fa-user-plus text-5xl"></i>
+              <div class="flex justify-center items-center text-[50px]">
+                +
+                K
+                <span class="num text-5xl font-semibold my-2" data-number="1">0</span>
+              </div>
+              <span class="text text-2xl font-bold text-primary">مشتــرك</span>
+            </div>
+
+
+            <div class="col relative p-7 opacity-80 hover:opacity-100 duration-300 text-center rounded-lg overflow-hidden bg-secondary text-gray-50">
+              <i class="fa-solid fa-arrow-trend-up text-5xl"></i>
+              <div class="flex justify-center items-center text-[50px]">
+                +
+                <span class="num text-5xl font-semibold my-2" data-number="5">0</span>
+              </div>
+              <span class="text text-2xl font-bold text-primary">خـدمـات</span>
+            </div>
+
+          </div>
+
+        </div>
+      </section>
+      <!-- End stats -->
+
+    </main>
+    <!-- End Main page -->
+
+    <!-- Start footer -->
+    <footer id="footer">
+      <div class="contact py-3 border-b border-secondary">
+        <div class="container flex gap-2 items-center justify-center">
+
+          <div class="instagram">
+            <a href="" target="_blank"
+              class="insta text-white text-2xl cursor-pointer bg-[#e1306c] hover:bg-[#c13584] duration-300 h-10 w-10 flex items-center justify-center rounded-full">
+              <i class="fab fa-instagram"></i>
+            </a>
+          </div>
+
+          <div class="gmail">
+            <a href="mailto:" target="_blank"
+              class="insta text-white text-2xl cursor-pointer bg-amber-700 hover:bg-amber-800 duration-300 h-10 w-10 flex items-center justify-center rounded-full">
+              <i class="fas fa-envelope"></i>
+            </a>
+          </div>
+
+          <div class="tiktok">
+            <a href="" target="_blank"
+              class="insta text-white text-2xl cursor-pointer bg-[#222] hover:bg-[#111] duration-300 h-10 w-10 flex items-center justify-center rounded-full">
+              <i class="fab fa-tiktok"></i>
+            </a>
+          </div>
+
+          <div class="snapchat">
+            <a href=""
+              target="_blank"
+              class="insta text-white text-2xl cursor-pointer bg-[#f0ed3d] hover:bg-[#dfdc4a] duration-300 h-10 w-10 flex items-center justify-center rounded-full">
+              <i class="fab fa-snapchat"></i>
+            </a>
+          </div>
+
+        </div>
+      </div>
+      <div class="foot px-5 py-5 text-primary">
+        <p class="w-fit mx-auto font-semibold">جميع الحقوق محفوظة لتطبيق سكرتيري 2024 &copy;</p>
+      </div>
+    </footer>
+    <!-- End footer -->
+
+
+    <!-- Swiper -->
+    <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+    <script src="https://unpkg.com/swiper@8/swiper-bundle.min.js"></script>
+    <script src="./src/js/swiper.js"></script>
+    <!-- fontAwesome js file -->
+    <script src="./src/js/all.min.js"></script>
+    <!-- main js file -->
+    <script type="module" src="./src/js/main.js"></script>
+  </body>
+</html>
